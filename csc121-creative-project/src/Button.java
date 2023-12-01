@@ -21,8 +21,8 @@ public class Button {
 		return c;
 	}
 	
-	boolean isPressed(PApplet c) {
-		if (c.mousePressed == true && c.mouseX >= x && c.mouseX <= x + width && c.mouseY >= y && c.mouseY <= y + height) {
+	boolean isPressed(int mx, int my) {  // (int mx, int my)
+		if (mx >= x && mx <= x + width && my >= y && my <= y + height) {
 			return true;
 		} else {
 			return false;
